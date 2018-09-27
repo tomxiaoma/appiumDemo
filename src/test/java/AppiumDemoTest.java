@@ -44,6 +44,7 @@ public class AppiumDemoTest {
         for (int i=0;i<5;i++){
             SwipeScreen.swipeLeft(driver);
         }
+        Thread.sleep(2000);
         new TouchAction(driver).tap(PointOption.point(392, 980)).perform().release();
 
         Thread.sleep(5000);
