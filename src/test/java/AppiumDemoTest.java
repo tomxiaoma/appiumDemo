@@ -46,7 +46,7 @@ public class AppiumDemoTest {
         }
         new TouchAction(driver).tap(PointOption.point(392, 980)).perform().release();
 
-        Thread.sleep(7000);
+        Thread.sleep(5000);
 
         driver.findElementById("com.yiqizhangda.parent.test:id/et_phone_activity_login").sendKeys("15900796431");
         driver.findElementById("com.yiqizhangda.parent.test:id/btn_nextstep_activity_login").click();
