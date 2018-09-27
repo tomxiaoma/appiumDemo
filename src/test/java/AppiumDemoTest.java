@@ -6,7 +6,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.io.File;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -16,7 +16,7 @@ public class AppiumDemoTest {
 
     @BeforeTest
     public void initApium() throws MalformedURLException, InterruptedException {
-        File classpathRoot = new File(System.getProperty("user.dir"));
+        /*File classpathRoot = new File(System.getProperty("user.dir"));
         File appDir = new File(classpathRoot,"app");
         File app = new File(appDir,"yiqizhangda.apk");
 
@@ -24,7 +24,7 @@ public class AppiumDemoTest {
             System.out.println("找不到apk");
         }else{
             System.out.println("找到了apk！！！");
-        }
+        }*/
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName","Android Emulator");
