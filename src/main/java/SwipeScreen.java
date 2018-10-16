@@ -43,6 +43,11 @@ public class SwipeScreen {
     }
 
 
+    public static void tochButton(AppiumDriver driver){
+        (new TouchAction(driver)).press(PointOption.point(152, 709))
+                .moveTo(PointOption.point(169,706)).release().perform();
+    }
+
 
 
 }

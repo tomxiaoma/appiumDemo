@@ -59,7 +59,8 @@ public class AppiumDemoTest {
     @AfterTest
     public void closeApp() throws InterruptedException {
         Thread.sleep(3000);
-        driver.quit();
+        driver.closeApp();
+        //driver.quit();
 
     }
 
